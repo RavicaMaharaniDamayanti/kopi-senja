@@ -54,7 +54,7 @@ nav a:hover {
     background-image:
         linear-gradient(rgba(40, 25, 15, 0.55),
                         rgba(40, 25, 15, 0.55)),
-        url('images/kopi-senja.jpg');
+        url('images/kopi-hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -169,13 +169,6 @@ nav a:hover {
     margin: 0;
 }
 
-/* Tampilan responsif untuk tablet */
-@media (max-width: 900px) {
-    .daftar-menu {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 /* Tampilan responsif untuk HP */
 @media (max-width: 500px) {
     header {
@@ -211,7 +204,7 @@ nav a:hover {
     #beranda p {
         font-size: 16px;
     }
-    
+
     #menu {
         padding: 40px 15px;
     }
