@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+header h1,
+h2,
+.daftar-menu h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #F5EFE6;
+    color: #60452F;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #60452F;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #A6A27A;
+}
+
+/* Desain section Beranda */
+#beranda {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    background-image:
+        linear-gradient(rgba(40, 25, 15, 0.55),
+                        rgba(40, 25, 15, 0.55)),
+        url('images/kopi-senja.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beranda h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#beranda p {
+    font-size: 15px;
+    font-style: italic;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Tombol Lihat Menu */
+.tombol-menu {
+    display: inline-block;
+    background-color: #60452F;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.tombol-menu:hover {
+    background-color: #A6A27A;
+    color: white;
+}
+
+/* Desain section Tentang Kami */
+#tentang {
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#tentang h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#tentang p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+#tentang p:first-of-type {
+    font-style: italic; 
+    color: #4a4a4a;
+    line-height: 1.2;
+}
+
+#tentang p:first-of-type::before {
+    content: "“";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#tentang p:first-of-type::after {
+    content: "”";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Desain section Menu */
+#menu {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+#menu h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#menu > p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Susunan kartu menu */
+.daftar-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.daftar-menu > div {
+    background-color: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.daftar-menu h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.daftar-menu p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #60452F;
+    margin: 0;
+}
+
+/* Tampilan responsif untuk tablet */
+@media (max-width: 900px) {
+    .daftar-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tampilan responsif untuk HP */
+@media (max-width: 500px) {
+    #menu {
+        padding: 40px 15px;
+    }
+
+    .daftar-menu {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+/* Desain Informasi Kafe */
+#kontak {
+    background-color: #E8DED1;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#kontak h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#kontak p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+/* Desain footer */
+footer {
+    background-color: #60452F;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.daftar-menu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.daftar-menu > div {
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.daftar-menu > div:hover {
+    transform: translateY(-5px);
+}
